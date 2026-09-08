@@ -1,0 +1,487 @@
+{
+  "success": true,
+  "data": {
+      "questions": [
+          {
+              "id": "africanInvestmentPreference",
+              "title": "Which African countries would you like to invest in?",
+              "type": "radio",
+              "options": [
+                  {
+                      "value": "all",
+                      "text": "All African countries"
+                  },
+                  {
+                      "value": "specific",
+                      "text": "I want to choose specific countries"
+                  }
+              ],
+              "required": true,
+              "helpText": "This helps us tailor your investment portfolio to your geographical preferences.",
+              "section": "personal"
+          },
+          {
+              "id": "investmentStyle",
+              "title": "How would you like to invest?",
+              "type": "select",
+              "options": [
+                  {
+                      "value": "",
+                      "text": "Select your investment style"
+                  },
+                  {
+                      "value": "highRisk",
+                      "text": "Go for higher yields (More risk, higher return)"
+                  },
+                  {
+                      "value": "balancedRisk",
+                      "text": "Balance yield and safety (Moderate risk and return)"
+                  },
+                  {
+                      "value": "lowRisk",
+                      "text": "Keep it safer (Lower risk, lower return)"
+                  }
+              ],
+              "required": true,
+              "helpText": "Your risk preference will help us tailor our investment recommendations to match your comfort level",
+              "section": "investment_preferences"
+          },
+          {
+              "id": "investmentObjective",
+              "title": "What is your primary investment objective?",
+              "type": "select",
+              "options": [
+                  {
+                      "value": "",
+                      "text": "Select your investment objective"
+                  },
+                  {
+                      "value": "capitalGrowth",
+                      "text": "Capital Growth – Reinvest interest to grow your investment over time"
+                  },
+                  {
+                      "value": "income",
+                      "text": "Income – Receive regular interest payments from your bonds"
+                  }
+              ],
+              "required": true,
+              "helpText": "This helps us know what to do with your bond payments: send them to you as cash or reinvest them to grow your balance",
+              "section": "investment_preferences"
+          },
+          {
+              "id": "investmentTimeframe",
+              "title": "How long do you plan to keep your money invested?",
+              "type": "select",
+              "options": [
+                  {
+                      "value": "",
+                      "text": "Select your investment timeframe"
+                  },
+                  {
+                      "value": "0t2years",
+                      "text": "Short term (0 - 2 years)"
+                  },
+                  {
+                      "value": "2to5years",
+                      "text": "Medium term (2 - 5 years)"
+                  },
+                  {
+                      "value": "5+years",
+                      "text": "Long term (5+ years)"
+                  }
+              ],
+              "required": true,
+              "helpText": "Your investment time horizon affects the types of investments we recommend.",
+              "section": "financial"
+          },
+          {
+              "id": "annualIncome",
+              "title": "What is your annual income?",
+              "type": "select",
+              "options": [
+                  {
+                      "value": "",
+                      "text": "Select your annual income range"
+                  },
+                  {
+                      "value": "under25k",
+                      "text": "Under $50,000"
+                  },
+                  {
+                      "value": "25k-50k",
+                      "text": "$50,000 - $100,000"
+                  },
+                  {
+                      "value": "50k-75k",
+                      "text": "$100,001 - $200,000"
+                  },
+                  {
+                      "value": "75k-100k",
+                      "text": "$200,001 - $300,000"
+                  },
+                 
+                  {
+                      "value": "200k+",
+                      "text": "Over $300,000"
+                  }
+              ],
+              "required": true,
+              "helpText": "This information helps us understand your financial capacity.",
+              "section": "financial"
+          },
+       
+          {
+              "id": "employmentStatus",
+              "title": "What's your current employment status?",
+              "type": "select",
+              "options": [
+                  {
+                      "value": "",
+                      "text": "Select your employment status"
+                  },
+                  {
+                      "value": "employed",
+                      "text": "Employed"
+                  },
+                  {
+                      "value": "self-employed",
+                      "text": "Self-employed"
+                  },
+                  {
+                      "value": "unemployed",
+                      "text": "Unemployed"
+                  },
+                  {
+                      "value": "retired",
+                      "text": "Retired"
+                  },
+                  {
+                      "value": "student",
+                      "text": "Student"
+                  }
+              ],
+              "required": true,
+              "helpText": "This helps us understand your income stability and investment capacity.",
+              "section": "financial"
+          },
+          {
+              "id": "regulatoryDisclosures",
+              "title": "Regulatory Disclosures",
+              "type": "regulatory_disclosures",
+              "options": [
+                  {
+                      "value": "brokerageAffiliation",
+                      "text": "Are you or anyone in your immediate family affiliated with a brokerage firm or FINRA?"
+                  },
+                  {
+                      "value": "executiveShareholder",
+                      "text": "Are you or is anyone in your immediate family a senior executive or 10% or greater shareholder at a publicly traded company?"
+                  },
+                  {
+                      "value": "noneApply",
+                      "text": "None of these apply to me"
+                  }
+              ],
+              "required": true,
+              "helpText": "Please select all applicable regulatory disclosures. These are required for compliance purposes.",
+              "section": "disclosures"
+          },
+          {
+              "id": "emergencyContact",
+              "title": "Emergency Contact",
+              "type": "emergency_contact",
+              "options": [
+                  {
+                      "value": "yes",
+                      "text": "Yes"
+                  },
+                  {
+                      "value": "no",
+                      "text": "No"
+                  }
+              ],
+              "required": true,
+              "helpText": "An emergency contact may be contacted in case we are unable to reach you regarding important account matters.",
+              "section": "emergency_contact"
+          },
+          {
+              "id": "agreements",
+              "title": "Terms and Agreements",
+              "type": "checkbox",
+              "options": [
+                  {
+                      "value": "adv2a",
+                      "text": "I agree to the Form ADV Part 2A - Brochure"
+                  },
+                  {
+                      "value": "crs",
+                      "text": "I agree to the Client Relationship Summary"
+                  },
+                  {
+                      "value": "adv2b",
+                      "text": "I agree to the Form ADV Part 2B - Brochure Supplement"
+                  },
+                  {
+                      "value": "privacy",
+                      "text": "I agree to the Privacy Policy"
+                  },
+                  {
+                      "value": "terms",
+                      "text": "I agree to the Advisory Agreement"
+                  }
+              ],
+              "required": true,
+              "helpText": "Your funds, investments, and treasuries are held in custody and cleared through Stanbic Bank Uganda, a subsidiary of the Standard Bank Group. BoraBond requires you to sign the standard policies below. Please open and review all documents. Please review and accept all required legal documents. Click 'View Document' to read each agreement before accepting.",
+              "section": "agreements"
+          }
+      ],
+      "sections": [
+          {
+              "id": "personal",
+              "name": "Personal Information",
+              "description": "Investment preferences and experience level"
+          },
+          {
+              "id": "investment_preferences",
+              "name": "Investment Preferences",
+              "description": "Your investment objectives and approach"
+          },
+          {
+              "id": "financial",
+              "name": "Financial Profile",
+              "description": "Your financial situation and employment status"
+          },
+          {
+              "id": "disclosures",
+              "name": "Regulatory Disclosures",
+              "description": "Required regulatory confirmations"
+          },
+          {
+              "id": "emergency_contact",
+              "name": "Emergency Contact",
+              "description": "Emergency contact information for account safety"
+          },
+          {
+              "id": "agreements",
+              "name": "Terms and Agreements",
+              "description": "Legal agreements and terms of service"
+          }
+      ],
+      "africanCountries": [
+          {
+              "value": "algeria",
+              "text": "Algeria"
+          },
+          {
+              "value": "angola",
+              "text": "Angola"
+          },
+          {
+              "value": "benin",
+              "text": "Benin"
+          },
+          {
+              "value": "botswana",
+              "text": "Botswana"
+          },
+          {
+              "value": "burkina-faso",
+              "text": "Burkina Faso"
+          },
+          {
+              "value": "burundi",
+              "text": "Burundi"
+          },
+          {
+              "value": "cameroon",
+              "text": "Cameroon"
+          },
+          {
+              "value": "cape-verde",
+              "text": "Cape Verde"
+          },
+          {
+              "value": "central-african-republic",
+              "text": "Central African Republic"
+          },
+          {
+              "value": "chad",
+              "text": "Chad"
+          },
+          {
+              "value": "comoros",
+              "text": "Comoros"
+          },
+          {
+              "value": "congo",
+              "text": "Congo"
+          },
+          {
+              "value": "cote-divoire",
+              "text": "Côte d'Ivoire"
+          },
+          {
+              "value": "djibouti",
+              "text": "Djibouti"
+          },
+          {
+              "value": "egypt",
+              "text": "Egypt"
+          },
+          {
+              "value": "equatorial-guinea",
+              "text": "Equatorial Guinea"
+          },
+          {
+              "value": "eritrea",
+              "text": "Eritrea"
+          },
+          {
+              "value": "eswatini",
+              "text": "Eswatini"
+          },
+          {
+              "value": "ethiopia",
+              "text": "Ethiopia"
+          },
+          {
+              "value": "gabon",
+              "text": "Gabon"
+          },
+          {
+              "value": "gambia",
+              "text": "Gambia"
+          },
+          {
+              "value": "ghana",
+              "text": "Ghana"
+          },
+          {
+              "value": "guinea",
+              "text": "Guinea"
+          },
+          {
+              "value": "guinea-bissau",
+              "text": "Guinea-Bissau"
+          },
+          {
+              "value": "kenya",
+              "text": "Kenya"
+          },
+          {
+              "value": "lesotho",
+              "text": "Lesotho"
+          },
+          {
+              "value": "liberia",
+              "text": "Liberia"
+          },
+          {
+              "value": "libya",
+              "text": "Libya"
+          },
+          {
+              "value": "madagascar",
+              "text": "Madagascar"
+          },
+          {
+              "value": "malawi",
+              "text": "Malawi"
+          },
+          {
+              "value": "mali",
+              "text": "Mali"
+          },
+          {
+              "value": "mauritania",
+              "text": "Mauritania"
+          },
+          {
+              "value": "mauritius",
+              "text": "Mauritius"
+          },
+          {
+              "value": "morocco",
+              "text": "Morocco"
+          },
+          {
+              "value": "mozambique",
+              "text": "Mozambique"
+          },
+          {
+              "value": "namibia",
+              "text": "Namibia"
+          },
+          {
+              "value": "niger",
+              "text": "Niger"
+          },
+          {
+              "value": "nigeria",
+              "text": "Nigeria"
+          },
+          {
+              "value": "rwanda",
+              "text": "Rwanda"
+          },
+          {
+              "value": "sao-tome-and-principe",
+              "text": "São Tomé and Príncipe"
+          },
+          {
+              "value": "senegal",
+              "text": "Senegal"
+          },
+          {
+              "value": "seychelles",
+              "text": "Seychelles"
+          },
+          {
+              "value": "sierra-leone",
+              "text": "Sierra Leone"
+          },
+          {
+              "value": "somalia",
+              "text": "Somalia"
+          },
+          {
+              "value": "south-africa",
+              "text": "South Africa"
+          },
+          {
+              "value": "south-sudan",
+              "text": "South Sudan"
+          },
+          {
+              "value": "sudan",
+              "text": "Sudan"
+          },
+          {
+              "value": "tanzania",
+              "text": "Tanzania"
+          },
+          {
+              "value": "togo",
+              "text": "Togo"
+          },
+          {
+              "value": "tunisia",
+              "text": "Tunisia"
+          },
+          {
+              "value": "uganda",
+              "text": "Uganda"
+          },
+          {
+              "value": "zambia",
+              "text": "Zambia"
+          },
+          {
+              "value": "zimbabwe",
+              "text": "Zimbabwe"
+          }
+      ],
+      "totalQuestions": 9,
+      "totalSections": 5
+  }
+}
